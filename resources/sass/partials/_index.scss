@@ -1,0 +1,31 @@
+.comics{
+    margin: 20px;
+
+    .button{
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 20px 0 30px 0;
+        font-size: 22px;
+        text-transform: uppercase;
+        background-color: #3797f6;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    }
+    
+    .table{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #3797f6;
+
+        .image, .name,.price,
+        .available, .description{
+            margin-right: 150px;
+            height: 350px;
+        }
+    }
+}

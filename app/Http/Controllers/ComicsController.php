@@ -37,13 +37,16 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-       /*  ddd($request); */
-       $data = $request->all();
+       /* ddd($request->all()); */
 
-       $newComic = new Comic;
-       $newComic->name = $data['name'];
+       $newComic = new Comic();
+       $newComic->name = $request->name;
+       $newComic->price = $request->price;
+       $newComic->image = $request->image;
+       $newComic->available = $request->available;
+       $newComic->description = $request->description;
+
        $newComic->save();
-
        return redirect()->route('comics.show', $newComic->id);
     }
 
@@ -53,9 +56,9 @@ class ComicsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comics)
+    public function show(Comic $comic)
     {
-        return view('comics.show', compact('$comics'));
+        return view('comics.show', compact('comic'));
     }
 
     /**
