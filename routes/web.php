@@ -18,4 +18,4 @@ Route::get('/', 'PageController@index')->name('home');
 
 
 /* Comics Controller */
-Route::get('/comics', 'ComicsController@index')->name('comics');
+Route::resource('comics', ComicsController::class);
