@@ -1,1 +1,2 @@
-<h1>ciao</h1>
+{{-- {{ route('comics.show', $comic->id)}}"></a> --}}
+
