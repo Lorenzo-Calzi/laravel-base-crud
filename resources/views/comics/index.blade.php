@@ -5,49 +5,25 @@
 @section('main_content')
 
     <div class="comics">
-        {{-- <div class="button">
-            <a href="{{route('comics.create')}}">Crea il tuo Fumetto</a>
-        </div> --}}
-        
-        @foreach($comics as $comic)
-        <h2>Comic</h2>
-            <div class="table">
-                <div class="element">
-                    <div class="image">
+        <div class="genre">
+            <span>Current Series</span>
+        </div>
+    
+        <div class="container_card container">
+            @foreach($comics as $comic)
+                <div class="card">
+                    <a href="{{ route('comics.show', $comic->id)}}"">
                         <img src="{{$comic->image}}" alt="">
-                    </div>
-                </div>
-                
-                <div class="element">
-                    <div class="name">
-                        <h3>Title</h3>
-                        <a href="{{ route('comics.show', $comic->id)}}">{{$comic->name}}</a>
-                    </div>
-                </div>
-                
-                <div class="element">
-                    <div class="price">
-                        <h3>Prezzo</h3>
-                        <span>${{$comic->price}}</span>
-                    </div>
-                </div>
-                
-                <div class="element">
-                    <div class="available">
-                        <h3>Disponibilità</h3>
-                        <span>{{$comic->available}}</span>
-                    </div>
-                </div>
-                
-                <div class="element">
-                    <div class="description">
-                        <h3>Descrizione</h3>
-                        <span>{{$comic->description}}</span>
-                    </div>
-                </div>
-            </div>
-        @endforeach
+                        <span>{{$comic->name}}</span>
+                    </a>
+                </div>            
+            @endforeach
+        </div>
+    
+        <div class="button">
+            <span>LOAD MORE</span> 
+        </div>
     </div>
-
+    
 @endsection
 
