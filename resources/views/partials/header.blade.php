@@ -14,6 +14,6 @@
     </nav>
 
     <!-- Jumbotron -->
-    <div class="jumbotron"></div>
+    <div class="jumbo"></div>
     <!-- /Jumbotron -->
 </header>

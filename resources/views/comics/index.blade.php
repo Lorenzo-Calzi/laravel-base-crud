@@ -5,34 +5,45 @@
 @section('main_content')
 
     <div class="comics">
-        <div class="button">
+        {{-- <div class="button">
             <a href="{{route('comics.create')}}">Crea il tuo Fumetto</a>
-        </div>
-    
+        </div> --}}
+        
         @foreach($comics as $comic)
+        <h2>Comic</h2>
             <div class="table">
-                <div class="image">
-                    <img src="{{$comic->image}}" alt="">
+                <div class="element">
+                    <div class="image">
+                        <img src="{{$comic->image}}" alt="">
+                    </div>
                 </div>
-    
-                <div class="name">
-                    <h3>Title</h3>
-                    <a href="{{ route('comics.show', $comic->id)}}">{{$comic->name}}</a>
+                
+                <div class="element">
+                    <div class="name">
+                        <h3>Title</h3>
+                        <a href="{{ route('comics.show', $comic->id)}}">{{$comic->name}}</a>
+                    </div>
                 </div>
-    
-                <div class="price">
-                    <h3>Prezzo</h3>
-                    <span>${{$comic->price}}</span>
+                
+                <div class="element">
+                    <div class="price">
+                        <h3>Prezzo</h3>
+                        <span>${{$comic->price}}</span>
+                    </div>
                 </div>
-    
-                <div class="available">
-                    <h3>Disponibilità</h3>
-                    <span>{{$comic->available}}</span>
+                
+                <div class="element">
+                    <div class="available">
+                        <h3>Disponibilità</h3>
+                        <span>{{$comic->available}}</span>
+                    </div>
                 </div>
-    
-                <div class="description">
-                    <h3>Descrizione</h3>
-                    <span>{{$comic->description}}</span>
+                
+                <div class="element">
+                    <div class="description">
+                        <h3>Descrizione</h3>
+                        <span>{{$comic->description}}</span>
+                    </div>
                 </div>
             </div>
         @endforeach
