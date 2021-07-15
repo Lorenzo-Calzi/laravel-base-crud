@@ -1,0 +1,45 @@
+.sign{
+    background-color: rgba(48, 48, 48, 1);
+    margin: auto;
+    padding: 30px;
+
+    .container_sign{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sign_left{
+
+            span{
+                color: white;
+                padding: 10px 15px;
+                border: 2px solid #3797f6;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #3797f6;
+                    border: 2px solid white;
+                }
+            }
+        }
+        .sign_right{
+            display: flex;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                color: #3797f6;
+                margin-right: 20px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            img{
+                margin: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

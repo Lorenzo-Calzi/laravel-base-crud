@@ -1,0 +1,87 @@
+.credits{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-position: top;
+
+    .credit_left{
+        width: 50%;
+        height: 100%;
+
+        .container_left{
+            display: flex;
+        }
+
+            .list_left{
+                margin: 20px 20px 20px 0;
+
+                ul{
+                    list-style: none;
+                    color: white;
+                    margin-top: 20px;
+
+                    h3{
+                        margin-bottom: 15px;
+                    }
+
+                    li{
+                        color: rgba(149, 149, 149, 1);
+                        font-size: 14px;
+                        margin-bottom: 5px;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .other_list{
+                margin: 20px;
+
+                ul{
+                    list-style: none;
+                    color: white;
+                    margin-top: 20px;
+
+                    h3{
+                        margin-bottom: 15px;
+                    }
+
+                    li{
+                        color: rgba(149, 149, 149, 1);
+                        font-size: 14px;
+                        margin-bottom: 5px;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+        .copyright{
+            color: rgba(149, 149, 149, 1);
+            font-size: 12px;
+
+            a{
+                text-decoration: none;
+                color: #3797f6;
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .credit_right{
+        width: 50%;
+        height: 420px;
+        position: relative;
+
+        background-image: url('../img/dc-logo-bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
