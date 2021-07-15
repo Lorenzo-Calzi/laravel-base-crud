@@ -30,19 +30,17 @@
                         <p>{{$comic->description}}</p>
 
                         <div class="buttons">
-                            <form action="{{ route('comics.update', $comic->id)}}" method="post">
-                                @csrf
-                                @method('PUT')
-                        
-                                <input type="submit" value="Modifica" style="background-color: #0282f9">
-                            </form>
+
+                            <a href="{{ route('comics.edit', $comic->id)}}">Modifica</a>
 
                             <form action="{{ route('comics.destroy', $comic->id)}}" method="post">
                                 @csrf
                                 @method('DELETE')
                         
-                                <input type="submit" value="Elimina" style="background-color: red">
+                                <input type="submit" value="Elimina">
                             </form>
+
+                            
                         </div>
                     </div>
 

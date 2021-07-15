@@ -1,0 +1,21 @@
+.infos{
+    background-color: $brand_color;
+    padding: 20px;
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+
+        img{
+            height: 55px;
+            margin-right: 10px;
+        }
+        span{
+            font-size: 13px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }  
+}

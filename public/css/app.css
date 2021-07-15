@@ -14,57 +14,74 @@
   border-bottom: 4px solid #0282f9;
 }
 
-#site_header .up_header {
-  background-color: #3797f6;
+header .up_header {
+  background-color: #0282f9;
   color: white;
   display: flex;
   align-items: center;
 }
-#site_header .up_header .up_content {
+header .up_header .up_content {
   text-align: right;
   padding: 5px;
 }
-#site_header .up_header .up_content span {
+header .up_header .up_content span {
   font-size: 12px;
   margin: 10px;
 }
-#site_header .up_header .up_content span:hover {
+header .up_header .up_content span:hover {
   cursor: pointer;
 }
-#site_header .bottom_header {
+header .bottom_header {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#site_header .bottom_header a img {
+header .bottom_header a img {
   height: 80px;
 }
-#site_header .bottom_header ul {
+header .bottom_header ul {
   list-style: none;
 }
-#site_header .bottom_header ul li {
+header .bottom_header ul a {
+  text-decoration: none;
+  color: #464646;
+  padding-bottom: 44px;
+  position: relative;
+}
+header .bottom_header ul a.active {
+  color: #0282f9;
+}
+header .bottom_header ul a:hover {
+  cursor: pointer;
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+}
+header .bottom_header ul a li {
   display: inline;
   margin: 15px;
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
 }
-#site_header .bottom_header ul li a {
-  text-decoration: none;
+header .bottom_header ul a li i {
+  position: absolute;
+  right: 2px;
+  top: 2px;
   color: #0282f9;
+  vertical-align: middle;
 }
-#site_header .bottom_header input {
+header .bottom_header input {
   width: 120px;
   text-align: right;
   border: none;
-  border-bottom: 3px solid #3797f6;
+  border-bottom: 3px solid #0282f9;
   font-weight: 500;
   font-size: 13px;
   outline: none;
   margin: 5px;
 }
-#site_header .bottom_header i {
+header .bottom_header i {
   font-size: 12px;
 }
 
@@ -115,12 +132,15 @@
 .comics .button {
   text-align: center;
 }
-.comics .button span {
+.comics .button a {
+  text-decoration: none;
+}
+.comics .button a span {
   background-color: #3797f6;
   color: white;
   padding: 10px 100px;
 }
-.comics .button span:hover {
+.comics .button a span:hover {
   cursor: pointer;
   color: #3797f6;
   background-color: white;
@@ -188,8 +208,21 @@
   padding: 5px 10px;
   margin: 10px 40px;
   color: white;
+  background-color: red;
   border: none;
-  border-radius: 5px;
+  border-radius: 1px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+}
+.comic .desc .left_desc .buttons a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 10px 40px;
+  background-color: #0282f9;
+  color: white;
+  border: none;
+  border-radius: 1px;
   text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
@@ -324,12 +357,12 @@
   justify-content: center;
 }
 .edit .center .button {
-  padding: 5px 10px;
+  padding: 7px 10px 5px 10px;
   margin: 20px;
   color: white;
   background-color: #0282f9;
   border: none;
-  border-radius: 5px;
+  border-radius: 1px;
   text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
@@ -450,4 +483,35 @@
 }
 .sign .container_sign .sign_right img:hover {
   cursor: pointer;
+}
+
+.infos {
+  background-color: #0282f9;
+  padding: 20px;
+}
+.infos .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.infos .info img {
+  height: 55px;
+  margin-right: 10px;
+}
+.infos .info span {
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.working {
+  background-color: #0282f9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.working h1 {
+  text-transform: uppercase;
+  font-size: 30px;
 }

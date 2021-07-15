@@ -1,3 +1,46 @@
+<?php
+
+    $menu = [
+        [
+            'href' => route('characters'),
+            'text' => 'characters'
+        ],
+        [
+            'href' => route('comics.index'),
+            'text' => 'comics'
+        ],
+        [
+            'href' => route('movies'),
+            'text' => 'movies'
+        ],
+        [
+            'href' => route('tv'),
+            'text' => 'tv'
+        ],
+        [
+            'href' => route('games'),
+            'text' => 'games'
+        ],
+        [
+            'href' => route('collectibles'),
+            'text' => 'collectibles'
+        ],
+        [
+            'href' => route('fans'),
+            'text' => 'fans'
+        ],
+        [
+            'href' => route('news'),
+            'text' => 'news'
+        ],
+        [
+            'href' => route('shop'),
+            'text' => 'shop'
+        ],
+    ];
+
+?>
+
 <header id="site_header">
     <div class="up_header">
             <div class="up_content container">
@@ -10,14 +53,18 @@
             <a href="{{route('home')}}">
                 <img src="{{asset('img/dc-logo.png')}}" alt="">
             </a>
+            
             <div>
                 <ul>
-                    <li>
-                        <a href="{{route('comics.index')}}">COMICS</a>
-                    </li>
-                    <li>
-                        <a href="{{route('comics.create')}}">CREATE</a>
-                    </li>
+                    @foreach($menu as $item)
+                        <a href="{{$item['href']}}" class="{{Route::currentRouteName() === $item['text'] ? 'active' : ''}}">
+                            @if ($item['text']==='shop')
+                                <li>{{$item['text']}} <i class="fas fa-sort-down"></i></li>
+                            @else
+                                <li>{{$item['text']}}</li>  
+                            @endif
+                        </a>
+                    @endforeach
                 </ul>
             </div>
     

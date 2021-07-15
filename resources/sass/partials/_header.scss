@@ -1,7 +1,7 @@
-#site_header{
+header{
 
     .up_header{
-        background-color: #3797f6;
+        background-color: $brand_color;
         color: white;
         display: flex;
         align-items: center;
@@ -35,16 +35,35 @@
         ul{
             list-style: none;
 
-            li{
-                display: inline;
-                margin: 15px;
-                font-weight: 500;
-                font-size: 15px;
-                text-transform: uppercase;
+            a{
+                text-decoration: none;
+                color: rgba(70, 70, 70, 1);
+                padding-bottom: 44px;
+                position: relative;
 
-                a{
-                    text-decoration: none;
+                &.active{
+                    color: $brand_color; 
+                }
+
+                &:hover{
+                    cursor: pointer;
                     color: $brand_color;
+                    border-bottom: 4px solid $brand_color;
+                }
+                li{
+                    display: inline;
+                    margin: 15px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    text-transform: uppercase;
+
+                    i{
+                        position: absolute;
+                        right: 2px;
+                        top: 2px;
+                        color: $brand_color;
+                        vertical-align: middle;
+                    }
                 }
             }
         }
@@ -52,7 +71,7 @@
             width: 120px;
             text-align: right;
             border: none;
-            border-bottom: 3px solid #3797f6;
+            border-bottom: 3px solid $brand_color;
             font-weight: 500;
             font-size: 13px;
             outline: none;
@@ -63,4 +82,3 @@
         }
     }
 }
-
