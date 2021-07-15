@@ -46,7 +46,7 @@ header .bottom_header ul {
 header .bottom_header ul a {
   text-decoration: none;
   color: #464646;
-  padding-bottom: 44px;
+  padding-bottom: 45px;
   position: relative;
 }
 header .bottom_header ul a.active {
