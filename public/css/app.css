@@ -178,6 +178,22 @@
   font-size: 18px;
   margin-right: 50px;
 }
+.comic .desc .left_desc .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comic .desc .left_desc .buttons input {
+  padding: 5px 10px;
+  margin: 10px 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+}
 .comic .desc .adv {
   position: relative;
   padding-top: 10px;
@@ -225,21 +241,98 @@
   cursor: pointer;
 }
 
-.create {
-  margin: 20px;
+.create h3 {
+  text-align: center;
+  padding-top: 20px;
 }
-.create h1 {
-  margin-bottom: 20px;
+.create .short_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.create .form-group label {
-  width: 150px;
+.create .short_content .form-group {
+  margin: 10px;
+  padding: 10px;
 }
-.create .form-group .button {
-  background-color: #3797f6;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: white;
+.create .short_content .form-group label {
   text-transform: uppercase;
+}
+.create .short_content .form-group input {
+  padding: 10px 20px;
+}
+.create .long_content .form-group {
+  margin: 10px;
+  padding: 10px;
+}
+.create .long_content .form-group label {
+  text-transform: uppercase;
+  display: block;
+}
+.create .long_content .form-group input {
+  padding: 10px 20px;
+  width: 100%;
+}
+.create .center {
+  display: flex;
+  justify-content: center;
+}
+.create .center .button {
+  padding: 5px 10px;
+  margin: 20px;
+  color: white;
+  background-color: #0282f9;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.edit h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+.edit .short_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit .short_content .form-group {
+  margin: 10px;
+  padding: 10px;
+}
+.edit .short_content .form-group label {
+  text-transform: uppercase;
+}
+.edit .short_content .form-group input {
+  padding: 10px 20px;
+}
+.edit .long_content .form-group {
+  margin: 10px;
+  padding: 10px;
+}
+.edit .long_content .form-group label {
+  text-transform: uppercase;
+  display: block;
+}
+.edit .long_content .form-group input {
+  padding: 10px 20px;
+  width: 100%;
+}
+.edit .center {
+  display: flex;
+  justify-content: center;
+}
+.edit .center .button {
+  padding: 5px 10px;
+  margin: 20px;
+  color: white;
+  background-color: #0282f9;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .jumbo {

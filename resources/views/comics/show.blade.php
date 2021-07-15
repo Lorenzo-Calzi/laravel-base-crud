@@ -28,6 +28,22 @@
                         </div>
                         
                         <p>{{$comic->description}}</p>
+
+                        <div class="buttons">
+                            <form action="{{ route('comics.update', $comic->id)}}" method="post">
+                                @csrf
+                                @method('PUT')
+                        
+                                <input type="submit" value="Modifica" style="background-color: #0282f9">
+                            </form>
+
+                            <form action="{{ route('comics.destroy', $comic->id)}}" method="post">
+                                @csrf
+                                @method('DELETE')
+                        
+                                <input type="submit" value="Elimina" style="background-color: red">
+                            </form>
+                        </div>
                     </div>
 
                     <div class="adv">
@@ -37,13 +53,6 @@
                 </div>
             </div> 
             <!-- /Description -->
-
-            <form action="{{ route('comics.destroy', $comic->id)}}" method="post">
-                @csrf
-                @method('DELETE')
-        
-                <input type="submit" value="Elimina">
-            </form>
 
             <!-- Infos -->
             <div class="bg_white">
@@ -76,8 +85,3 @@
         </div>
 
 @endsection
-
-
-
-
-
