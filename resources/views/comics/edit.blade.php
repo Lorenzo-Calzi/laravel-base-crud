@@ -28,7 +28,6 @@
                     <input type="text" name="available" id="available" value="{{$comic->available}}">
                 </div>
     
-                
             </div>
 
             <div class="long_content">
