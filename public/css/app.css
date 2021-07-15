@@ -154,6 +154,104 @@ header .bottom_header i {
   border: 1px solid #3797f6;
 }
 
+.comic {
+  /* Desc */
+  /* /Desc */
+  /* Infos */
+  /* /Infos */
+}
+.comic .bg_blue {
+  margin-bottom: 70px;
+  height: 80px;
+  background-color: #0282f9;
+  position: relative;
+}
+.comic .bg_blue img {
+  position: absolute;
+  top: -240px;
+  border: 1px solid white;
+}
+.comic .desc {
+  display: flex;
+  margin: 40px 0 80px 0;
+}
+.comic .desc .left_desc h2 {
+  text-transform: uppercase;
+  color: #003f5e;
+}
+.comic .desc .left_desc .availability {
+  padding: 20px 30px;
+  margin: 10px 50px 10px 0;
+  background-color: #55ba59;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #357739;
+}
+.comic .desc .left_desc .availability span {
+  color: #bafd9c;
+}
+.comic .desc .left_desc .availability .available {
+  margin-right: 30px;
+  border-right: 1px solid #357739;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+.comic .desc .left_desc .availability strong {
+  color: white;
+}
+.comic .desc .left_desc p {
+  line-height: 25px;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.comic .desc .adv {
+  position: relative;
+  padding-top: 10px;
+}
+.comic .desc .adv span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-weight: 600;
+  color: #383838;
+}
+.comic .desc .adv img {
+  height: 250px;
+}
+.comic .bg_white {
+  border-top: 1px solid #c4c4c4;
+}
+.comic .bg_white .infos {
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.comic .bg_white .infos .info {
+  border-right: 1px solid #c4c4c4;
+  border-bottom: none;
+  margin: 0;
+  padding: 20px;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.comic .bg_white .infos .info img {
+  height: 55px;
+  background-color: #b4b4b4;
+  border-radius: 5px;
+  padding: 5px;
+  color: grey;
+  cursor: pointer;
+}
+.comic .bg_white .infos .info span {
+  color: #c4c4c4;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .create {
   margin: 20px;
 }
