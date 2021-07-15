@@ -14,74 +14,47 @@
   border-bottom: 4px solid #0282f9;
 }
 
-/* #site_header{
-    .bg_blue{
-        height: 50px;
-        background-color: #3797f6;
-    }
-
-    nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-        ul{
-            list-style: none;
-            display: inline-block;
-            padding: 10px;
-            margin: 0;
-
-            li{
-                font-weight: 600;
-                display: inline-block;
-                margin: 10px 30px 10px 30px;
-
-                a{
-                    text-decoration: none;
-                    color: #3797f6;
-                }
-            }
-        }
-    } 
-} */
-header .up_header {
+#site_header .up_header {
   background-color: #3797f6;
   color: white;
   display: flex;
   align-items: center;
 }
-header .up_header .up_content {
+#site_header .up_header .up_content {
   text-align: right;
   padding: 5px;
 }
-header .up_header .up_content span {
+#site_header .up_header .up_content span {
   font-size: 12px;
   margin: 10px;
 }
-header .up_header .up_content span:hover {
+#site_header .up_header .up_content span:hover {
   cursor: pointer;
 }
-header .bottom_header {
+#site_header .bottom_header {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .bottom_header a img {
+#site_header .bottom_header a img {
   height: 80px;
 }
-header .bottom_header ul {
+#site_header .bottom_header ul {
   list-style: none;
 }
-header .bottom_header ul li {
+#site_header .bottom_header ul li {
   display: inline;
   margin: 15px;
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
 }
-header .bottom_header input {
+#site_header .bottom_header ul li a {
+  text-decoration: none;
+  color: #0282f9;
+}
+#site_header .bottom_header input {
   width: 120px;
   text-align: right;
   border: none;
@@ -91,7 +64,7 @@ header .bottom_header input {
   outline: none;
   margin: 5px;
 }
-header .bottom_header i {
+#site_header .bottom_header i {
   font-size: 12px;
 }
 
