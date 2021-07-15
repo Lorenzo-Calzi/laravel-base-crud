@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title -->
         <title>@yield('title', 'Comics')</title>
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}" type="image/x-icon"> 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- CSS -->
